@@ -1,0 +1,142 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+.header {
+  padding-inline: 24px;
+  background-color: #242424;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+.header h2 {
+  cursor: pointer;
+}
+
+.header input {
+  position: absolute;
+  right: 10px;
+  /* top: 50vw; */
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  padding: 4px 8px 4px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: 1rem;
+  width: 15rem;
+  border-radius: 1rem;
+  height: 15rem;
+  border: rgba(255, 255, 255, 0.87) 1px solid;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.cardTitle img {
+  padding-inline-end: 10px;
+  max-height: 50px;
+  width: 50px;
+}
+
+.cardButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardButton button {
+  padding-inline: 1.5rem;
+  padding-block: 0.7rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.cardButton button:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
+.cardGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width:1200px) {
+  .cardGroup {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .cardGroup {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .cardGroup {
+    grid-template-columns: 1fr;
+  }
+}
+
+.navigationButton {
+  margin: 2rem 1rem;
+  text-align: center;
+}
+
+.navigationButton button {
+  margin: 2px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+.navigationButton select {
+  margin: 2px;
+  width: 50px;
+  padding-block: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+.navigationButton option {
+  height: 100px;
+}
+
+.navigationButton button:hover {
+  cursor: pointer;
+}
+
+.footer {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 0.60rem;
+}
