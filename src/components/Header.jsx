@@ -1,4 +1,5 @@
 import React from "react";
+import Pill from "./Pill";
 
 const Header = ({ name, search }) => {
   return (
@@ -9,7 +10,7 @@ const Header = ({ name, search }) => {
           className="searchInput"
           onChange={(e) => search(e.target.value)}
           type="text"
-          placeholder="Search tool"
+          placeholder="🔍"
         />
       </div>
     </>
