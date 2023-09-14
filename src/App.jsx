@@ -12,7 +12,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route index element={<Dashboard />} />
-          <Route path="/submit" element={<Submit />} />
+          {/* <Route path="/submit" element={<Submit />} /> */}
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
